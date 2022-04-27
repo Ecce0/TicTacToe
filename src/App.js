@@ -1,14 +1,11 @@
-import './App.css';
-import TicTacToe from './His_TTT_App/TicTacToe';
-import TTT_Mine from './My_TTT_App/TTT'
+import React from 'react'
+import GamePlay from './New_TTT_App.js/GamePlay'
+
 
 function App() {
     return (
-        <div className="App">
-            <TicTacToe />
-            <TTT_Mine />
-        </div>
-    );
+        <GamePlay />
+    )
 }
 
 export default App;
