@@ -9,29 +9,19 @@ const CellBlock = styled.div`
     width: 200px;
     height: 200px;
     background-color: white;    
-    
-`
-const X = styled.img`
-  width: 50px;
-  height: 50px
 `
 
 
 
-const Cell = ({ occupied, children }) => {
+const Cell = ({ onClick, isNext, box }) => {
 
-
-  const handleClick = (e) => {
-    console.log(e.target)
-    
-}
   return (
-    <CellBlock 
-     occupied={occupied}
-     onClick={handleClick}
-     >
-         {children}
-     </CellBlock>
+    <CellBlock
+      onClick={onClick}
+      isNext={isNext} 
+      box={box}     
+    />
+
   )
 }
 
